@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -9,16 +10,21 @@ class WelcomeScreen extends StatelessWidget {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 22),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset('assets/images/cooee_logo.png', height: 130),
-                const SizedBox(height: 6),
-                const Text(
-                  "Welcome to CallCooee 🚀",
-                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: Colors.white),
-                  textAlign: TextAlign.center,
-                ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // 🔥 Replaced image with Lottie
+              Lottie.asset(
+                'assets/animations/login.json',
+                height: 130,
+              ),
+
+              const SizedBox(height: 6),
+              const Text(
+                "Welcome to PayZen 🚀",
+                style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 12),
               const Text(
                 "Seamless plan upgrades and one-tap checkout for your calls & video.",
@@ -28,7 +34,9 @@ class WelcomeScreen extends StatelessWidget {
               const SizedBox(height: 24),
               ElevatedButton(
                 onPressed: () => Navigator.pushNamed(context, '/plans'),
-                style: ElevatedButton.styleFrom(padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 14)),
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 14),
+                ),
                 child: const Text("Get Started"),
               ),
             ],
