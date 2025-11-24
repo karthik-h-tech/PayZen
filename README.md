@@ -51,8 +51,7 @@ assets/
 ├── animations/
 │   ├── success.json                     # Lottie animation for success.
 │   └── error.json                       # Lottie animation for error.
-├── images/
-│   └── cooeepay_logo.png                # App logo.
+│  
 ```
 
 ## Installation
