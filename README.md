@@ -1,12 +1,12 @@
-# CooeePay
+# PayZen
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.8.1+-blue.svg)](https://flutter.dev/)
 
-A Flutter app for plan selection and payment flow, designed for CallCooee's communication-focused audience. This app allows users to choose from Free, Premium, and Pro plans, apply promo codes, and simulate payment processing with a mock Stripe checkout API.
+A Flutter app for plan selection and payment flow, designed for communication-focused audience. This app allows users to choose from Free, Premium, and Pro plans, apply promo codes, and simulate payment processing with a mock Stripe checkout API.
 
 ## Abstract
 
-CooeePay simplifies subscription management and payment experience for users looking for flexible communication plans. It combines vibrant UI, responsive design, and mock API integration to create a realistic checkout flow. The app demonstrates Flutter best practices, state management with Riverpod, and animations for improved user engagement.
+PayZen simplifies subscription management and payment experience for users looking for flexible communication plans. It combines vibrant UI, responsive design, and mock API integration to create a realistic checkout flow. The app demonstrates Flutter best practices, state management with Riverpod, and animations for improved user engagement.
 
 ## Features
 
